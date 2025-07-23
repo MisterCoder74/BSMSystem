@@ -1,0 +1,35 @@
+# Disable directory browsing
+Options -Indexes
+
+# Deny access to sensitive files
+<FilesMatch "^(\.htaccess|\.git|config\.php|.*\.json)$">
+  Order Allow,Deny
+  Deny from all
+</FilesMatch>
+
+# Allow access to index.php
+<Files "index.php">
+  Order Allow,Deny
+  Allow from all
+</Files>
+
+# Protect data directory
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteRule ^data/.* - [F,L]
+  RewriteRule ^includes/.* - [F,L]
+</IfModule>
+
+# PHP error handling
+php_flag display_errors Off
+php_value error_reporting E_ALL
+php_flag log_errors On
+php_value error_log logs/php_errors.log
+
+# Set default charset
+AddDefaultCharset UTF-8
+
+# Force HTTPS (uncomment in production)
+# RewriteEngine On
+# RewriteCond %{HTTPS} off
+# RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]

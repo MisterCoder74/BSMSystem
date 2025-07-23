@@ -1,0 +1,35 @@
+[
+    {
+        "name": "Lucilla Santi",
+        "gender": "F",
+        "email": "lucilla.s@gmail.com",
+        "phone": "+39 3490000000",
+        "address": "Roma",
+        "notes": "Non usare bendaggi a caldo",
+        "updated_at": "2025-05-24",
+        "id": 1,
+        "created_at": "2025-05-23"
+    },
+    {
+        "name": "Marika Leonardi",
+        "gender": "F",
+        "email": "marikuccia88@gmail.com",
+        "phone": "+39 3470000000",
+        "address": "Viterbo",
+        "notes": "Allergica ai FANS",
+        "updated_at": "2025-05-24",
+        "id": 2,
+        "created_at": "2025-05-22"
+    },
+    {
+        "name": "Alessio Santi",
+        "gender": "M",
+        "email": "a.santi@gmail.com",
+        "phone": "+39 3480000000",
+        "address": "",
+        "notes": "",
+        "updated_at": "2025-05-25",
+        "id": 3,
+        "created_at": "2025-05-25"
+    }
+]
