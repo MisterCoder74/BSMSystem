@@ -67,7 +67,7 @@ All data is stored in JSON and TXT files located in the `data` directory:
 
 ## Licensing
 
-This project is produced by Vivacity Design (Alessandro Demontis) and is provided to the user under payment of a one-time fee.
+This tool is produced by Vivacity Design (Alessandro Demontis) and is provided to the user under payment of a one-time fee.
 
 ## Support
 
